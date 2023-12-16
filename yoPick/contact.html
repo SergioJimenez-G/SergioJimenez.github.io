@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>yoPick - Contact Us</title>
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,900,700" rel="stylesheet" type="text/css" />
+		<link href="css/global.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body class="template bg-contact">
+		<div id="wrapper">
+			<div id="header-container">
+				<div class="container">
+					<div class="row">
+						<header id="header">
+							<a href="index.html" id="logo" title="yopick logo">YoPick</a>
+
+							<div id="social">
+								<a href="https://www.facebook.com/sjhappyman" taget="_blank" class="facebook" title="Follow us on FaceBook">Follow us on FaceBook</a>
+								<a href="https://twitter.com/sjhappyman" taget="_blank" class="twitter" title="Tweet us!!">Tweet us!!</a>
+								<a href="https://www.youtube.com/user/sjhappyman10" taget="_blank" class="youtube" title="Play us on YouTube">Play us on YouTube</a>
+								<a href="contact.html" taget="_blank" class="contactus" title="Contact Us">Contact Us</a>
+							</div>
+						</header>
+					</div>
+				</div>
+			</div>
+			<div id="nav-container">
+				<div class="container">
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li class="subnav"><a href="#">Services</a>
+								<ul>
+									<li><a href="web.html">Web Development</a></li>
+									<li><a href="graphic.html">Graphic Design</a></li>
+								</ul>
+							</li>
+							<li><a href="portfolio.html">Portfolio</a></li>
+							<li class="active"><a href="contact.html">Contact Us</a></li>
+							<li class="search">
+								<form action="#" method="get">
+									<input type="text" value="" placeholder="Type search here" class="s" />
+									<button type="submit" class="b">Search</button>
+								</form>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div id="background-image"></div>
+			<div id="breadcrumb">
+				<div class="container">
+					<a href="index.html" class="home">Home</a><span class="active">Contact Us</span>
+				</div>
+			</div>
+			<div id="main">
+				<div id="center" class="container">
+					<h1>Contact Us</h1>
+					<div class="form-content">
+                  		<form name="form1" method="post" action="">
+
+                    		<div class="row">
+								<div class="col col-50">
+                      				<div class="form-group">
+                      					<label>Full name</label><br />
+                        				<input type="text" name="username" id="username" value="" class="form-text" required minlength="3" maxlength="30" />
+                      				</div>
+                      			</div>
+                      			<div class="col col-50">
+                      				<div class="form-group">
+                      					<label>Email</label><br />
+                        				<input type="email" name="useremail" id="useremail" value="" class="form-text" required />
+                      				</div>
+                      			</div>
+                      		</div>
+
+              				<div class="form-group">
+              					<label>What type of project are you interested?</label><br />
+                				<select name="type_of_project" size="3" multiple id="type_of_project" class="form-multiple">
+									<option value="web_design">Web Design</option>
+									<option value="web_development">Web Development</option>
+									<option value="graphic_design">Graphic Design</option>
+									<option value="logo_design">Logo Design</option>
+									<option value="print_work">Print Work</option>
+									<option value="dossier">Dossier</option>
+									<option value="book">Book</option>
+									<option value="flyer">Flyer</option>
+									<option value="poster">Poster</option>
+									<option value="business_card">Business Card</option>
+                				</select>
+              				</div>
+
+                      		<div class="form-group">
+								<label>I would like to receive your newsletters</label><br />
+								<div class="form-radio">
+									<label><input type="radio" name="newsletters" value="yes" id="newsletters_0" /> Yes</label>
+								</div>
+								<div class="form-radio">
+									<label><input type="radio" name="newsletters" value="no" id="newsletters_1" /> No</label>
+								</div>
+							</div>
+
+                      		<div class="form-group">
+                          		<label>How many employees are in your company?</label><br />
+                          		<div class="form-check">
+                          			<label><input type="checkbox" name="employees" value="0-25" id="employees_0" /> 0-25</label>
+                          		</div>
+                          		<div class="form-check">
+                          			<label><input type="checkbox" name="employees" value="26-100" id="employees_1"/> 26-100</label>
+								</div>
+								<div class="form-check">
+									<label><input type="checkbox" name="employees" value="101-300" id="employees_2" />101-300</label>
+								</div>
+								<div class="form-check">
+									<label><input type="checkbox" name="employees" value="300-1000" id="employees_3" /> 300-1000</label>
+								</div>
+								<div class="form-check">
+									<label><input type="checkbox" name="employees" value="over-1000" id="employees_4" /> Over 1000</label>
+								</div>
+							</div>
+
+                      		<div class="form-group">
+                          		<label>Additional Comments</label><br />
+                           		<textarea name="comments" cols="50" rows="5" class="form-text" id="comments"></textarea>
+                           	</div>
+
+                           	<div class="form-group form-submit">
+                        		<input name="reset" type="reset" value="Reset" class="button button-reset pull-right" />
+                        		<input name="rend" type="submit" value="Send" class="button button-submit" />
+                           </div>
+               	      </form>
+
+                  	</div>
+				</div>
+			</div>
+
+			<footer id="footer">
+				<div class="container">
+					<p id="footer-nav" class="pull-right">
+						<a href="about.html">About Us</a>
+						<a href="web.html">Web Development</a>
+                        <a href="graphic.html">Graphic Design</a>
+						<a href="portfolio.html">Portfolio</a>
+						<a href="contact.html">Contact Us</a>
+					</p>
+					<p class="pull-left"><a href="mailto:sergio@sergiojimenez.com" class="letter"><span></span> Sergio Jimenez</a> / Copyright 2016</p>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
