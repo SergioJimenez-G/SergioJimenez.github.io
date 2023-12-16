@@ -1,0 +1,242 @@
+/** audio player styles **/
+.audio-player * {
+	box-sizing: border-box;
+}
+.audio-player, .audio-player div, .audio-player h2, .audio-player a, .audio-player span, .audio-player button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+div.audio-player {
+  position: relative;
+  width: auto;
+  min-height: 70px;
+  margin: 0 auto;
+  background: #4c4e5a;
+  background: -webkit-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+  background: -moz-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+  background: -o-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+  background: -ms-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+  background: linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.audio-player .track {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  display: block;
+}
+.audio-player .thumbnail {
+	position: relative;
+
+	padding: 35px 5px 2px 5px;
+}
+	.audio-player .thumbnail img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		padding: 1px;
+		border: 1px solid #222;
+		border-bottom-width: 2px;
+		background: #eee;
+	}
+
+	.audio-player .mejs-container {
+		position: relative;
+	}
+
+	.audio-player .mejs-time-total {
+		left: 60px;
+		right: 15px;
+		width: auto!important;
+		background-color: #c00;
+	}
+	.audio-item p {
+		margin: 10px 0 20px 0;
+	}
+	.audio-item .download {
+		margin: 0 0 20px 0;
+		padding: 0;
+		line-height: 20px;
+	}
+		.audio-item .download a {
+			padding: 10px 20px;
+			color: #222;
+			background-color: #ccc;
+		}
+		.download a:hover { color: #fff; background-color: #999;}
+		.download a .fa {
+			margin-right: 5px;
+			color: #000;
+		}
+
+
+/* play/pause control */
+.mejs-controls .mejs-button button {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  text-indent: -9999px;
+}
+
+.mejs-controls .mejs-play button, .mejs-controls .mejs-pause button {
+  width: 34px;
+  height: 34px;
+  bottom: 7px;
+  left: 10px;
+  background: transparent url('playpause.png') 0 0 no-repeat;
+}
+.mejs-controls .mejs-pause button { background-position: 0 -35px; }
+
+
+/* mute/unmute control */
+.mejs-controls .mejs-mute button, .mejs-controls .mejs-unmute button {
+  width: 18px;
+  height: 19px;
+  top: 9px;
+  right: 142px;
+  background: transparent url('audio.png') 0 0;
+}
+.mejs-controls .mejs-unmute button { background-position: 0 -19px; }
+
+
+/* volume scrubber bar */
+.mejs-controls div.mejs-horizontal-volume-slider {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+  width: 120px;
+  height: 11px;
+  background: #212227;
+  -webkit-box-shadow: inset 0px 1px 0px rgba(0,0,0,0.3), 0px 1px 0px rgba(255,255,255,0.25);
+  -moz-box-shadow: inset 0px 1px 0px rgba(0,0,0,0.3), 0px 1px 0px rgba(255,255,255,0.25);
+  box-shadow: inset 0px 1px 0px rgba(0,0,0,0.3), 0px 1px 0px rgba(255,255,255,0.25);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+  position: absolute;
+  width: 0;
+  height: 9px;
+  top: 1px;
+  left: 1px;
+  background: #90d26a;
+  background: -webkit-linear-gradient(top, #90d26a 0%, #83bb63 100%);
+  background: -moz-linear-gradient(top, #90d26a 0%, #83bb63 100%);
+  background: -o-linear-gradient(top, #90d26a 0%, #83bb63 100%);
+  background: -ms-linear-gradient(top, #90d26a 0%, #83bb63 100%);
+  background: linear-gradient(top, #90d26a 0%, #83bb63 100%);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+
+
+/* time scrubber bar */
+.mejs-controls div.mejs-time-rail {  }
+
+.mejs-controls .mejs-time-rail span {
+  position: absolute;
+  display: block;
+
+  height: 12px;
+  top: 40px;
+  /*left: 55px;*/
+  cursor: pointer;
+  -webkit-border-radius: 0px 0px 2px 2px;
+  -moz-border-radius: 0px 0px 2px 2px;
+  border-radius: 0px 0px 2px 2px;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-total {
+  background: #565860;
+
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.mejs-controls .mejs-time-rail .mejs-time-loaded {
+  top: 0;
+  left: 0;
+  width: 0;
+  background: #7b7d82;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.mejs-controls .mejs-time-rail .mejs-time-current {
+  top: 0;
+  left: 0;
+  width: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #90d26a;
+  background: -webkit-linear-gradient(top, #90d26a 0%, #83bb63 100%);
+  background: -moz-linear-gradient(top, #90d26a 0%, #83bb63 100%);
+  background: -o-linear-gradient(top, #90d26a 0%, #83bb63 100%);
+  background: -ms-linear-gradient(top, #90d26a 0%, #83bb63 100%);
+  background: linear-gradient(top, #90d26a 0%, #83bb63 100%);
+}
+
+/* metallic sliders */
+.mejs-controls .mejs-time-rail .mejs-time-handle {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 22px;
+  top: -6px;
+  background: url('handle-lg.png') no-repeat;
+}
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle {
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 14px;
+  top: -1px;
+  background: url('handle-sm.png') no-repeat;
+}
+
+
+/* time progress tooltip */
+.mejs-controls .mejs-time-rail .mejs-time-float {
+  position: absolute;
+  display: none;
+  width: 33px;
+  height: 23px;
+  top: -26px;
+  margin-left: -17px;
+  z-index: 9999;
+  background: url('time-box.png');
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-float-current {
+  width: 33px;
+  display: block;
+  left: 0;
+  top: 4px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  color: #666;
+  text-align: center;
+  z-index: 9999;
+}
+
+/** clearfix **/
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix { display: inline-block; }
+
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }

@@ -1,0 +1,231 @@
+#nav .slicknav_menu {
+	display: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+	/** NAV **/
+	#nav ul.nav {
+		display: none;
+	}
+	#nav .slicknav_menu {
+		display: block;
+	}
+	#header .social {
+		margin-right: 70px;
+	}
+	#header #social {
+		margin-left: 3px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	/** HOME **/
+	#primary-block .block-left, #primary-block .block-right {
+		float: none;
+		width: 100%;
+	}
+	#primary-block .block-left .img {
+		float: left;
+		width: 50%;
+		height: auto;
+		margin-right: 20px;
+	}
+	#primary-block .block-right .image-list {
+		margin: 0 -10px;
+	}
+	#primary-block .block-right .image-list .thumbnail {
+		float: left;
+		width: 33.333333%;
+		margin-bottom: 20px;
+		padding: 0 10px;
+		overflow: hidden;
+	}
+		#primary-block .image-list .thumbnail .img {
+			display: block;
+			float: none;
+			width: 100%;
+		}
+		#primary-block .image-list .thumbnail .caption {
+			float: none;
+			margin: 10px 0 0 0;
+			padding: 0;
+			width: 100%;
+		}
+			#primary-block .image-list .thumbnail .caption h3 {
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+			}
+
+	#secundary-block .home-block .block-left, #secundary-block .home-block .block-right {
+		float: none;
+		width: 100%;
+	}
+	#secundary-block .block-right .image-list {
+		margin: 0 -10px;
+	}
+	#secundary-block .block-right .image-list .thumbnail {
+		float: left;
+		width: 33.333333%;
+		margin-bottom: 20px;
+		padding: 0 10px;
+		overflow: hidden;
+	}
+		#secundary-block .image-list .thumbnail .img {
+			display: block;
+			float: none;
+			width: 100%;
+		}
+		#secundary-block .image-list .thumbnail .caption {
+			float: none;
+			margin: 10px 0 0 0;
+			padding: 0;
+			width: 100%;
+		}
+			#secundary-block .image-list .thumbnail .caption h3 {
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+			}
+
+	/** CONTACT FORM **/
+	.form-img {
+		display: none;
+	}
+
+	/** INFLUENCES **/
+	.image-gallery .thumbnail {
+		width: 50%;
+	}
+	.image-gallery .thumbnail .caption p {
+		max-height: 110px;
+		overflow: hidden;
+	}
+
+	/** MUSIC **/
+	.audio-gallery .audio-item {
+		width: 50%;
+	}
+	.audio-gallery .audio-item p {
+		position: relative;
+		max-height: 50px;
+		overflow: hidden;
+	}
+
+	/** ABOUT ME **/
+	body.aboutus .text-content figure {
+		float: none;
+		clear: both;
+		margin: 0 0 20px 0;
+		width: 100%;
+	}
+		body.aboutus .text-content figure a {
+			display: block;
+			overflow: hidden;
+		}
+			body.aboutus .text-content figure img {
+				width: 100%;
+				max-width: 100%;
+			}
+}
+
+@media screen and (max-width: 680px) {
+	#footer #footer-nav {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 360px) {
+
+	/** LOGO **/
+	#header #logo {
+		width: 200px;
+		height: 23px;
+	}
+		#header #logo span {
+			width: 200px;
+			height: 73px;
+			background-size: 200px 73px
+		}
+
+	#header .slicknav_btn {
+		top: 38px;
+	}
+	#nav .slicknav_nav {
+		top: 80px;
+	}
+	#header #nav .social {
+		display: none;
+	}
+	#nav-container {
+		margin: 35px 10px 0 0;
+	}
+	#footer-nav {
+		display: none;
+	}
+
+	/** HOME **/
+	h1 {
+		font-size: 23px;
+	}
+	#primary-block .block-left, #primary-block .block-right {
+		float: none;
+		width: 100%;
+	}
+	#primary-block .block-left .img {
+		float: none;
+		width: 100%;
+		margin-right: 0;
+		height: auto;
+	}
+	#primary-block .block-right .image-list {
+		margin: 0 -10px;
+	}
+	#primary-block .block-right .image-list .thumbnail {
+		float: none;
+		width: 100%;
+		margin-bottom: 20px;
+		padding: 0 10px;
+		overflow: hidden;
+	}
+
+	#secundary-block .home-block .block-left, #secundary-block .home-block .block-right {
+		float: none;
+		width: 100%;
+	}
+	#secundary-block .block-right .image-list {
+		margin: 0 -10px;
+	}
+	#secundary-block .block-right .image-list .thumbnail {
+		float: none;
+		width: 100%;
+		margin-bottom: 20px;
+		padding: 0 10px;
+		overflow: hidden;
+	}
+		#secundary-block .image-list .thumbnail .img {
+			display: block;
+			float: none;
+			width: 100%;
+		}
+
+	/** INFLUENCES **/
+	.image-gallery .thumbnail {
+		width: 100%;
+	}
+	.image-gallery .thumbnail .caption p {
+		max-height: none;
+	}
+
+	/** MUSIC **/
+	.audio-gallery .audio-item {
+		width: 100%;
+	}
+	.audio-gallery .audio-item p {
+		max-height: none;
+	}
+
+
+}
