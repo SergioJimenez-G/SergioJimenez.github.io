@@ -1,0 +1,3 @@
+Thumnail: 640 x 480
+
+Big: 800 x 600
